@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ls"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/user_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*呵呵*"
+                android:textColor="#999999"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/reply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="发表于: 12月04日"
+                android:textColor="#999999"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/read_reply_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:text="回复(2)"
+            android:textColor="#999999"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:id="@+id/noread_reply_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ts" />
+
+            <TextView
+                android:id="@+id/noread_reply_num_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="7dp"
+        android:maxLines="3"
+        android:text="阿斯顿个法师法师放假asgasg阿双方噶搜噶搜噶嗦嘎上个萨嘎搜噶搜噶搜噶是阿斯顿撒旦撒旦撒旦撒旦撒反攻倒算嘎斯"
+        android:textColor="#333333"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/reply_from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="10dp"
+        android:text="来源: 移动互联网压倒性的来了!"
+        android:textColor="#10a679"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+</LinearLayout>
